@@ -1,0 +1,131 @@
+1. What will be output of the following code.
+
+    employeeID=12233
+    function foo(){
+      console.log(employeeID)
+    }
+    foo()   
+
+  Ans: employeeID is undefined.
+    
+2.What will be the output of the following code.
+
+  var employeeID=12233
+  function foo(){
+    var employeeID= 555
+    console.log(employeeID)
+  }
+  foo()
+  console.log(employeeID)
+  
+  Ans: 555,12233
+  
+3.What will be the output of the following code
+
+  var employeeID=12233
+  function foo(){
+     employeeID= 555
+    console.log(employeeID)
+  }
+  foo()
+  console.log(employeeID)
+  
+  Ans. 555,555
+  
+ 4.What will be the output of the following code
+  
+  function foo(){
+    console.log(employeeId);
+    var employeeId = '19000';
+  }
+  foo()
+  
+  Ans: undefined
+  
+5. What will be the output of the following code
+  
+  function foo() {
+    var employeeName = 'TATA';
+    return function(){
+      console.log(employeeName);
+    }
+  }
+  let val = new foo();
+  val()
+  
+  Ans. TATA
+  
+6. What will be the output of the following code
+  
+  a=[1,2,3]
+  b=[1,2,3]
+  console.log(a==b)
+  //same for object also
+
+  Ans. false
+  
+7. What will be the output of the following code  
+
+  let a=[1,2,3]
+  let b=a
+  console.log(a===b)
+
+  Ans. true
+
+8. What will be the output of the following code
+    
+  let a=[1,2,3]
+  let b=a
+  b.push(4)
+  console.log(a)
+  console.log(b)
+  
+  Ans. [1,2,3,4]
+       [1,2,3,4]
+       
+9. What will be the output of the following code
+  let a=[1,2,3]
+  let b=[...a]
+  a.push(4)
+  console.log(a)
+  console.log(b)
+  
+  Ans. [1,2,3,4]
+       [1,2,3]
+   
+10. What will be the output of the following code
+  var obj = {
+  message: 'Hello',
+  innerMessage: function () {
+  	var self = this;
+    (function () {
+      console.log(self.message);
+    }());
+  }
+};
+   
+10. What will be the output of the following code
+
+    var employ = {
+      name: 'TATA',
+      empId: function () {
+        var self = this;
+        (function () {
+          console.log(self.name);
+        }());
+      }
+    };
+    employ.empId()
+   
+   Ans. TATA
+   
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
