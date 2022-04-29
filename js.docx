@@ -228,9 +228,70 @@
     
     Ans: start, promise1, timer1, promise2, timer2
     
+ 20. Features of ES6
+     
+     1.Arrrow functions
+     2.Let keyword
+     3.for...of Loop
+     4.Template Literals->  ${a}
+     5.classes
+     6.Destructuring
+     7.Spread and Rest Operator
+     8.const Keyword
+
+21. What are Types in js?
     
-  
-  
+    1.Boolean
+    2.Number
+    3.String
+    4.Null
+    5.undefined
+
+22. What is hoisting
+    
+    JavaScript code runs in two steps(Memory allocation and Code Execution).
+    In first phase it allocates memory to all the variables and functions. In second phase it executes the code line by line(synchronously).
+    As memory is allcated they are in a way declared(but not initialized).This phenomenon of allocating space to variables and functions before
+    a single line of code is executed is known as hoisting. 
+    It is similar to moving all the variable and function declarations at the top of the program.
+    
+   let and const are also hoisted in JS. Although accessing let and const type variables would give an error because they are in
+   temporal dead zone(they are not in global space).
+   
+   Example: 
+    console.log(a);
+    var = 10;
+    
+    output: undefined
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   
   
   
