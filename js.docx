@@ -250,8 +250,8 @@
 22. What is hoisting
     
     JavaScript code runs in two steps(Memory allocation and Code Execution).
-    In first phase it allocates memory to all the variables and functions. In second phase it executes the code line by line(synchronously).
-    As memory is allcated they are in a way declared(but not initialized).This phenomenon of allocating space to variables and functions before
+    In first step it allocates memory to all the variables and functions. In second phase it executes the code line by line(synchronously).
+    As memory is allocated they are in a way declared(but not initialized).This phenomenon of allocating space to variables and functions before
     a single line of code is executed is known as hoisting. 
     It is similar to moving all the variable and function declarations at the top of the program.
     
@@ -263,6 +263,32 @@
     var = 10;
     
     output: undefined
+    
+23. What is const? can we mutate array and object?
+    
+    const is block scope same  as let we can mutate const array and object 
+    
+    Example:
+    const a=[1,2,3,4,5]
+    a[0]=2
+    console.log(a)
+
+    output: [2,2,3,4,5]
+    
+24. what are rest and spread operators
+    
+    Rest syntax looks exactly like spread syntax. In a way, rest syntax is the opposite of spread syntax.
+    Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and
+    "condenses" them into a single element.
+
+    Spread operator:                                    |   Rest Operator:
+        Spreads the array or Obaject literal            |       For a function to pass n number of pramaters or rest of the paramters.
+        Example:                                        |       Example: 
+            var a =[1,2,3]                              |           sum(...a){console.log(a) }
+            var b =[4,5,6]                              |            sum(1,2,3,4,5)   
+            c=[...a,...b]                               |
+                                                        |
+                                                        |
 
 
     
