@@ -6,7 +6,7 @@
     }
     foo()   
 
-  Ans: employeeID is undefined.
+  Ans: employeeID is not defined.
     
 2.What will be the output of the following code.
 
@@ -93,16 +93,6 @@
   Ans. [1,2,3,4]
        [1,2,3]
    
-10. What will be the output of the following code
-  var obj = {
-  message: 'Hello',
-  innerMessage: function () {
-  	var self = this;
-    (function () {
-      console.log(self.message);
-    }());
-  }
-};
    
 10. What will be the output of the following code
 
@@ -118,10 +108,127 @@
     employ.empId()
    
    Ans. TATA
-   
+    
+11. What will be the output of the following code
+    
+    console.log(employeeID)
+    var employeeID=12233
+    
+    Ans: undefined  
 
-  
-  
+12. What will be the output of the following code
+    
+    console.log(employeeID)
+    let employeeID=12233
+    
+    Ans: Cannot access 'employeeID' before initialization
+
+13. What will be the output of the following code
+    function foo() {
+      console.log(1)
+      setTimeout(function(){console.log(2)},1000)
+      setTimeout(function(){console.log(3)},0)
+      console.log(4)
+    }
+    console.log(5)
+
+    foo();
+    
+    Ans: 5,1,4,3,2
+
+14. What will be the output of the following code
+    
+    function foo() {
+      setTimeout(()=>{
+        console.log(i)
+      },1000)
+      var i =1;
+    }
+
+    foo();
+    
+    Ans: 1
+    
+15. What will be the output of the following code
+    
+    console.log('start')
+    setTimeout(() => {
+      console.log('setTimeout')
+    })
+    Promise.resolve().then(() => {
+      console.log('resolve')
+    })
+    console.log('end')
+    
+    Ans:  start, end, resolve, setTimeout
+    
+16. What will be the output of the following code
+    
+    const promise = new Promise((resolve, reject) => {
+      console.log(1);
+      setTimeout(() => {
+        console.log("timerStart");
+        resolve("success");
+        console.log("timerEnd");
+      }, 0);
+      console.log(2);
+    });
+    promise.then((res) => {
+      console.log(res);
+    });
+    console.log(4);
+    
+    Ans: 1,2,4,timerStart,timerEnd, success
+    
+17. What will be the output of the following code
+
+    const timer1 = setTimeout(() => {
+      console.log('timer1');
+    const timer3 = setTimeout(() => { 
+        console.log('timer3')
+      }, 0)
+    }, 0)
+    const timer2 = setTimeout(() => {
+      console.log('timer2')
+    }, 0)
+    console.log('start')
+    
+    Ans: start, timer1, timer2, timer3
+    
+18. What will be the output of the following code
+
+    const timer1 = setTimeout(() => {
+      console.log('timer1');
+      const promise1 = Promise.resolve().then(() => {
+        console.log('promise1')
+      })
+    }, 0)
+    const timer2 = setTimeout(() => {
+      console.log('timer2')
+    }, 0)
+    console.log('start')
+    
+    Ans: start, timer1, promise1, timer2
+    
+19. What will be the output of the following code
+
+    const promise1 = Promise.resolve().then(() => {
+      console.log('promise1');
+      const timer2 = setTimeout(() => {
+        console.log('timer2')
+      }, 0)
+    });
+    const timer1 = setTimeout(() => {
+      console.log('timer1')
+      const promise2 = Promise.resolve().then(() => {
+        console.log('promise2')
+      })
+    }, 0)
+    console.log('start');
+    
+    Ans: start, promise1, timer1, promise2, timer2
+    
+    
   
   
   
