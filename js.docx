@@ -288,11 +288,26 @@
             var b =[4,5,6]                              |            sum(1,2,3,4,5)   
             c=[...a,...b]                               |
                                                         |
-                                                        |
+           
+           |
     
-    
-    
-    
+ 25. What is call,bind,apply?
+ 
+                                              |
+    call: To say simply ,to access the values | bind: functionality is similar to call               | apply: it is same  as call if we want to pass an array instead
+    outside of the  function.                 |  this can be used when we want to bind the           |  of passing one by one like call
+                                              |  value and invoke the function later.                |                
+     const emp = {                            |                                                      |  const emp ={name :'csk', age:38}  
+      name: 'csk',                            |   const emp ={name :'csk', age:38}                   |  function a(msg1,msg2){ console.log(this.name, this.age,msg1,msg2 )}
+      age: '38',                              |   function a(){ console.log(this.name, this.age);}   |   
+    };                                        |   a.bind(emp)                                        |  const values = a.apply(emp, [1,2])
+                                              |   a()                                                |  console.log(values)
+    function a() {                            |                                                      |  
+      console.log(this.name, this.age);       |   o/p: csk 38                                        |  o/p: csk,38,1,2
+    }                                         |                                                      |
+    a.call(emp);                              |                                                      |
+                                              |
+    o/p: csk 38
     
     
     
