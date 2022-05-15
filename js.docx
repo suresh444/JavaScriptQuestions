@@ -322,10 +322,63 @@
    35. why js functions are called higher order functions?
    36. setinterval and settimeout?
    
+   37. Write logic for sorting the array without sort mehtod
+        
+        var done = false;
+
+        while (!done) {
+          done = true;
+          for (let i = 0; i < a.length; i++) {
+            if (a[i] > a[i + 1]) {
+              let temp = a[i];
+              a[i] = a[i + 1];
+              a[i + 1] = temp;
+              done = false;
+            }
+          }
+          console.log(a);
+        }
     
+   38. Write logic for finding the unique elements in array
     
+        var arr=[1,1,2,2,2]
+        
+        const uniqueElements = arr.filter((el,index, arrayVal)=>{
+              if(arrayVal.indexOf(el)===index) return el
+        })    
+        
+        console.log(uniqueElements)
+        
+        o/p : [1,2]
+        
+    39. Write logic for finding the occurences of elements in  array    
+        
+        var arr=[1,1,2,2,2]
+        var occurences={}
+        
+        for(let el of arr){
+            if(occurences[el]) occurences[el] = count++
+            else ocuurences[el] =1
+        }
+        
+        console.log(el)
+        
+        o/p: {1:1,2:3}
+        
+    40. Write a logic for returning the elemnts in array that are not repeated
     
+        var arr= [1,2,3,2,1,5,6]
+        
+        arr.filter((el)=>{
+            const b = arr.filter((el1)=>{
+            return (el1==el).length ===1
+            })
+        })
+        
+        console.log(...b)
     
+        
+        
     
     
     
