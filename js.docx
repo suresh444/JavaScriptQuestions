@@ -311,10 +311,25 @@
     
     
    26. What is prototype in js?
+       
+       Prototype is also an object , every object and method sin js will inherit the properties from prototype.
+       
    27. closures?
+   
+        closures is feature in js where inner function has access to variables of outer function.
+        
    28. Different ways of creating object in js?
+        
+        1) var a = new Object()
+        2) var a = Object.create(null)
+        3) var a = {name:"tata"}
+        
    29. what is event loop?
+        
+        Event loop is something which moves tasks from call back queuw to call stack so that it gets executed.
+        
    30. event propogation,delegation?
+        
    31. what is callback function?
    32. differece between callback and promise?
    33. strict in js?
