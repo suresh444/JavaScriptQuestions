@@ -328,7 +328,7 @@
         
         Event loop is something which moves tasks from call back queuw to call stack so that it gets executed.
         
-   30. event propogation,delegation?
+   30. event propogation,delegation, capturing?
         
    31. what is callback function?
    32. differece between callback and promise?
