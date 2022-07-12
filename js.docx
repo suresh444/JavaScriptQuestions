@@ -435,7 +435,30 @@
       55. what is IIFE?
       56. given an array a=[1,2,3,4], Print the elements in array for every 2 seconds? 
       57. Print the longest sub string "abcabcbb"?
-      
+      58. What is memoisation?
+            
+          It is an opeimization technique where we can cache the results and return the same result when we pass teh same 
+          paramenters instead of rerunnig the entire logic.
+          
+          function sum(a,b,c){
+            return a+b+c;
+          }
+          
+          function memoize(fun){
+          let cache={}
+          return function(...args){
+              if(args in cache){
+                return cache[args]  
+                }
+               const result = fun(args)
+               cache[args] =result
+               return result 
+              }
+          }
+          
+          let memoResult = memoize(sum);
+          
+          console.log(sum(1,2,3))
 
         
     
