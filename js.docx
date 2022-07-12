@@ -408,6 +408,16 @@
       47. What is async/await?
       48. How to handle error scenarios in promises and async/await?
       49. Write a function that works for sum(2)(3)(4)() and it can be sum()....()
+            
+            let sum =  function(a){
+              return function(b){
+                return b?sum(a+b):a 
+
+              }
+            }
+
+          console.log(sum(1)(4)(5)(6)(6)())
+      
       50. create a function that returns a object with key as note value and the value will be no of notes for particular note
              For example total amount is 48
              {
@@ -424,6 +434,7 @@
       54. What are anonymous functions? 
       55. what is IIFE?
       56. given an array a=[1,2,3,4], Print the elements in array for every 2 seconds? 
+      57. Print the longest sub string "abcabcbb"?
       
 
         
