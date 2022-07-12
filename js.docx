@@ -460,9 +460,9 @@
           
           console.log(sum(1,2,3))
         
-        59. let inputArray = [2,4,5, [5,4, [3,6,8], 3, 1], 2, 5]; (nesting could be up to any level) sum of the array?
+       59. let inputArray = [2,4,5, [5,4, [3,6,8], 3, 1], 2, 5]; (nesting could be up to any level) sum of the array?
         
-        60. What will be thw output for below code?
+       60. What will be thw output for below code?
         
             var Person = {
 	        getName: function(){
@@ -481,7 +481,7 @@
             var getPersonName = Person.getName;
             getPersonName();
             
-         61. What will be the output of the below code
+        61. What will be the output of the below code
             
             console.log(“1”);
             setTimeout(function(){
