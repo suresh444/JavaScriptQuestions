@@ -426,7 +426,19 @@
                  2: 1,
                  1: 1
              }
-             available notes = 1,2,5,10,20,50,100,200,500,2000
+             available notes = [1,2,5,10,20,50,100,200,500,2000]
+      
+      		const obj = {};
+		var dispathValue = 48;
+		var sortedNotes = availablenotes.sort((a, b) => b - a);
+		sortedNotes.forEach((el) => {
+		  if (dispathValue % el < dispathValue) {
+		    obj[el]=Math.floor(dispathValue/el)
+		    dispathValue = dispathValue %el
+		  }
+		});
+
+      
       
       51. Where do we use closures ? Examples for usage of closures?
       52. Why js functions are called as first class functions?
