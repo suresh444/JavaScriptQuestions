@@ -447,6 +447,34 @@
       55. what is IIFE?
       56. given an array a=[1,2,3,4], Print the elements in array for every 2 seconds? 
       57. Print the longest sub string "abcabcbb"?
+
+		below is the brute force method 
+		var longest = 0;
+
+		function getAllSubstrings(str) {
+		  for (let i = 0; i < str.length; i++) {
+		    for (let j = i + 1; j < str.length + 1; j++) {
+		      console.log(
+			[...str.substring(i, j).split('')].length,
+			[...new Set(str.substring(i, j).split(''))].length,
+			[...str.substring(i, j).split('')],
+			[...new Set(str.substring(i, j).split(''))]
+		      );
+		      if (
+			[...new Set(str.substring(i, j).split(''))].length ===
+			[...str.substring(i, j).split('')].length
+		      ) {
+			longest =
+			  [...str.substring(i, j).split('')].length > longest
+			    ? [...str.substring(i, j).split('')].length
+			    : longest;
+		      }
+		    }
+		  }
+		}
+		getAllSubstrings('geeksforgeeks');
+		console.log(longest);
+
       58. What is memoisation?
             
           It is an optimization technique where we can cache the results and return the same result when we pass teh same 
@@ -473,6 +501,21 @@
           console.log(sum(1,2,3))
         
        59. let inputArray = [2,4,5, [5,4, [3,6,8], 3, 1], 2, 5]; (nesting could be up to any level) sum of the array?
+       	
+		var flattenArrayVal=[]
+		 function flattenArray(val){
+		 val.forEach((el)=>{
+		 if(Array.isArray(el)){
+		   flattenArray(el)
+		  }else{
+		   flattenArrayVal.push(el)
+			 }
+		 	})
+		 }
+		
+		flattenArray(a)
+		 console.log(flattenArrayVal)
+
         
        60. What will be thw output for below code?
         
