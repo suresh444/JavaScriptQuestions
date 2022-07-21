@@ -1,1 +1,23 @@
+1) What is the purpose of Browser Module, Common Module, Forms Module?
 
+  Browser Module : Using Browser module will inturn imports common module also, to launch browser and run we will use browser module 
+    Using common module will inturn provide the option to use diffrent pipes, directives . Ex: ngIf, ngclass
+  FormsModule: To get all the required elemenst for template driven forms , mainly : NgModel, maxlengthvalidator, Email validator
+  
+2) What is AOT and JIT?
+  
+  AOT: aot compiler builds the code at run time and directly runs in the browser.
+  JIT: JIT compiler compiles application in the browser at the run time
+
+3) What is SPA?
+   In single page application application will be loaded as page and on that one page user will make interaction and all the
+   components will get rerwritten in the single page.
+   
+4) What is IVY in angular?
+  
+   IVY is a rendering engine , rendering engine is responsible for rendering the page requested by user. It interprets 
+   html and css and final layout is generated.
+   
+  
+  
+    
