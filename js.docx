@@ -446,6 +446,20 @@
       54. What are anonymous functions? 
       55. what is IIFE?
       56. given an array a=[1,2,3,4], Print the elements in array for every 2 seconds? 
+      
+      	function makeArrayPrinter(arr, delayMillis) {
+		  var i = 0;
+		  return function printer() {
+		    console.log(i, 'immmm');
+		    if (i < arr.length) {
+		      console.log(arr[i++]);
+		      setTimeout(printer, delayMillis);
+		    }
+		  };
+		}
+		
+		var f = makeArrayPrinter([1, 2, 3, 4, 5], 5000);
+f();
       57. Print the longest sub string "abcabcbb"?
 
 		below is the brute force method 
