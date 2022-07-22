@@ -329,6 +329,11 @@
         Event loop is something which moves tasks from call back queuw to call stack so that it gets executed.
         
    30. event propogation,delegation, capturing?
+   	propogation : propogation referes how event passes throigh dom tree.
+	bubbling: in bubbling event traverses from source to the root.
+	delegation: In deelegation event traverses from root to the source 
+	capturing: html → body → article → div → p , events propagate outwards from the target to the outer elements.
+		Capturing happens before bubbling. The three phases of event propagation are: capturing, target, and bubbling.
         
    31. what is callback function?
    32. differece between callback and promise?
