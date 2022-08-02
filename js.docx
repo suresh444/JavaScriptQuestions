@@ -598,7 +598,80 @@ f();
 			}
 		
 		}
-    
+    63) give stock recommendation to user as per below conditions
+
+		// recommentaion =
+
+		// 'BUY' currentPrice is greater than 10% of prviousDayPrice
+
+		// 'SELL' currentPrice is less than 10% of prviousDayPrice
+
+		// otherwise 'HOLD'
+
+
+
+		// output should be in below format :
+
+		/*  
+
+		{
+
+		    id: 101,
+
+		    prviousDayPrice: 60.9,
+
+		    currentPrice: 97.96,
+
+		    name: 'V R Films & Studios Ltd',
+
+		    recommendation: 'BUY'
+
+		  }
+
+
+
+		const stocks = [
+
+		    { id: 103, name: 'Aban Offshore Services Ltd' },
+
+		    { id: 101, name: 'V R Films & Studios Ltd' },
+
+		    { id: 102, name: 'Binani Industries Ltd' },
+
+		    { id: 104, name: 'HDIL' },
+
+		    { id: 105, name: 'Global Offshore Service Ltd' }
+
+		]
+
+
+
+		const stockValues = [
+
+		    { id: 105, prviousDayPrice: 11.42, currentPrice: 3.42 },
+
+		    { id: 101, prviousDayPrice: 60.9, currentPrice: 97.96 },
+
+		    { id: 102, prviousDayPrice: 34.35, currentPrice: 33.74 },
+
+		    { id: 103, prviousDayPrice: 53.95, currentPrice: 101.20 },
+
+		    { id: 104, prviousDayPrice: 23.1, currentPrice: 44.57 }
+
+		]
+
+64) function test() {
+    {
+        var a = "11";
+        let b = "21";
+    }
+    console.log(a);
+    console.log(b);
+	}
+
+	test();
+
+
     
     
     
