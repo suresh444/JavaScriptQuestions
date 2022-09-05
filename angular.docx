@@ -20,6 +20,7 @@
 
 5) Example for swicthMap
   Example link :https://angular-ivy-fkkbtb.stackblitz.io
+                https://switchmap.stackblitz.io
     searchBook() {
       this.bookId.valueChanges.pipe(
         debounceTime(500),
