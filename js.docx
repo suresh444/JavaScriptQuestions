@@ -760,6 +760,19 @@ f();
     
     
     
+    68) What is eval() ?
+    
+    	It is used to evaluate the function
+	
+	
+    69)	What is unknown in typescript?
+    
+	Type unknown is similar to any.
+	
+	let myVar1: unknown = myVar;   // No error
+	let myVar2: any = myVar;       // No error
+	let myVar3: boolean = myVar;   // Type 'unknown' is not assignable to type 'boolean'
+
     
     
     
