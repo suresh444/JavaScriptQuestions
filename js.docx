@@ -721,8 +721,40 @@ f();
 	if the second one can bring him the mental rest.
 	
 	
+67) Polyfill for map , foreach
 
+	const users = [1, 2, 3, 4, 5];
+	
+	Array.prototype.myMap = function(callbackFn){
+		var arr =[];
+		
+		for(var let i=0; i < this.length ; i++){
+			arr.push(callbackFn(this[i], i , this)
+		}
+		return arr
+	}
+	
+	
+	users.myMap((el, index)=>{
+		console.log(el, index)
+	})
     
+    
+    //foreach
+    
+    const users = [1, 2, 3, 4, 5];
+	
+	Array.prototype.myforEach = function(callbackFn){
+		var arr =[];
+		for(var let i=0; i < this.length ; i++){
+			callbackFn(this[i], i , this)
+		}
+	}
+	
+	
+	users.myMap((el, index)=>{
+		console.log(el, index)
+	})
     
     
     
