@@ -672,6 +672,30 @@ f();
 	test();
 
 
+65) Example for prototype?
+
+	class Myclass {
+	  constructor(word) {
+	    this.word = word;
+	  }
+	}
+
+	let anotherObj = {
+	  hi: function () {
+	    console.log('hi', this.word);
+	  },
+	};
+
+	let obj = new Myclass('word');
+	Object.setPrototypeOf(Myclass.prototype, anotherObj)
+	obj.hi()
+
+	Here we can see that the both have different scopes, so using prototypes we are setting the scope same scopes it will print hello wrold
+	
+	
+	
+	
+
     
     
     
