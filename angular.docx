@@ -17,7 +17,18 @@
   
    IVY is a rendering engine , rendering engine is responsible for rendering the page requested by user. It interprets 
    html and css and final layout is generated.
-   
+
+5) Example for swicthMap
+
+    searchBook() {
+      this.bookId.valueChanges.pipe(
+         debounceTime(500),
+         switchMap(id => {
+           console.log(id);
+           return this.bookService.getBook(id);
+         })
+      ).subscribe(res => this.book = res);
+    } 
    
    1:Write a polyfill for bind function.
 2:Given an expression string exp , write a program to examine whether the pairs and the orders of “{“,”}”,”(“,”)”,”[“,”]” are correct in exp.Example: Input: expz = [()]{}{[()()]()} Output: Balanced Input: exp = “[(])” Output: Not Balanced",
