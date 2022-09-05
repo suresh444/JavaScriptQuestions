@@ -19,7 +19,7 @@
    html and css and final layout is generated.
 
 5) Example for swicthMap
-
+  Example link :https://angular-ivy-fkkbtb.stackblitz.io
     searchBook() {
       this.bookId.valueChanges.pipe(
         debounceTime(500),
